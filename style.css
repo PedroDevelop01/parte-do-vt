@@ -1,86 +1,86 @@
 body {
-  background: #0f1117;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.card {
-  display: flex;
-  width: 100%;
-  background: #1a1d24;
-  border: 1px solid #2a2f3a;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.card img {
-  width: 250px;
-  height: 220px;
-  object-fit: cover;
-}
-
-.content {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    margin: 0;
+    padding: 20px;
+    background: #0d0f16;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
 .title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 6px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-.desc {
-  font-size: 14px;
-  color: #c2c6d1;
-  margin-bottom: 12px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-size: 14px;
-  margin-bottom: 12px;
+.event-card {
+    background: #11131c;
+    padding: 18px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px #000;
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.event-img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 .tag {
-  font-size: 12px;
-  background: #2a2f3a;
-  padding: 5px 10px;
-  border-radius: 8px;
+    display: inline-block;
+    background: #3949ab;
+    padding: 5px 12px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
 }
 
 .btn {
-  width: fit-content;
-  padding: 10px 18px;
-  font-size: 14px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  color: #fff;
-  background: #4f46e5;
+    background: #4c6ef5;
+}
+.btn.confirmed {
+    background: #2f9e44;
 }
 
-.btn.confirmado {
-  background: #16a34a;
+.event-page {
+    display: none;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #11131c;
+    border-radius: 25px;
+    box-shadow: 0 0 25px #000;
+}
+
+.event-page table {
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.event-page td {
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+}
+
+.back {
+    background: #333;
+    margin-top: 20px;
 }

@@ -1,111 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cards de Eventos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="container">
+<h1 class="title">Eventos Tech</h1>
 
-    <div class="card">
-      <img 
-        src="https://www.acceptmission.com/wp-content/uploads/2021/11/woman-attending-hackathon-small.jpg.webp" 
-        alt="Participante em um hackathon"
-      >
-      
-      <div class="content">
-        <div>
-          <h2 class="title">Hackathon Global TechDEVerse</h2>
+<div id="event-list" class="container">
 
-          <p class="desc">
-            48 horas de codificação, inovação e prêmios incríveis. 
-            Junte-se a desenvolvedores do mundo todo para construir o futuro.
-          </p>
-
-          <div class="info">
-            <span>📅 15 Out, 2023 · 18:00</span>
-            <span>🌐 Discord (Online)</span>
-            <span>👥 1250 participantes</span>
-          </div>
-
-          <div class="tags">
-            <span class="tag">#hackathon</span>
-            <span class="tag">#coding</span>
-            <span class="tag">#prizes</span>
-          </div>
-        </div>
-
-        <button class="btn confirmado">Confirmado</button>
-      </div>
+    <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" class="event-img">
+        <span class="tag">Hackathon</span>
+        <h2>Hackathon Global TechDEVerse</h2>
+        <p>15 Nov, 2023 – 18:00</p>
+        <button class="btn" onclick="openEvent(1)">Participar</button>
     </div>
 
-    <div class="card">
-      <img 
-        src="https://www.acceptmission.com/wp-content/uploads/2021/11/woman-attending-hackathon-small.jpg.webp" 
-        alt="Ambiente de workshop"
-      >
-
-      <div class="content">
-        <div>
-          <h2 class="title">Workshop React Avançado</h2>
-
-          <p class="desc">
-            Mergulhe fundo em Server Components, Suspense e padrões avançados 
-            de performance com especialistas da indústria.
-          </p>
-
-          <div class="info">
-            <span>📅 20 Out, 2023 · 14:00</span>
-            <span>📍 São Paulo, SP</span>
-            <span>👥 120 participantes</span>
-          </div>
-
-          <div class="tags">
-            <span class="tag">#react</span>
-            <span class="tag">#workshop</span>
-            <span class="tag">#frontend</span>
-          </div>
-        </div>
-
-        <button class="btn">Participar</button>
-      </div>
+    <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800" class="event-img">
+        <span class="tag">Frontend</span>
+        <h2>Workshop React Avançado</h2>
+        <p>20 Nov, 2023 – 14:00</p>
+        <button class="btn" onclick="openEvent(2)">Participar</button>
     </div>
 
-    <div class="card">
-      <img 
-        src="https://www.acceptmission.com/wp-content/uploads/2021/11/woman-attending-hackathon-small.jpg.webp" 
-        alt="Paisagem de reunião online"
-      >
-
-      <div class="content">
-        <div>
-          <h2 class="title">IA e o Futuro do Desenvolvimento</h2>
-
-          <p class="desc">
-            Um evento sobre IA e o desenvolvimento dela no futuro.
-          </p>
-
-          <div class="info">
-            <span>📅 25 Out, 2023 · 19:30</span>
-            <span>🌐 Zoom (Online)</span>
-            <span>👥 999999 participantes</span>
-          </div>
-
-          <div class="tags">
-            <span class="tag">#ai</span>
-            <span class="tag">#future</span>
-            <span class="tag">#webinar</span>
-          </div>
-        </div>
-
-        <button class="btn">Participar</button>
-      </div>
+    <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800" class="event-img">
+        <span class="tag">Inteligência Artificial</span>
+        <h2>IA e o Futuro do Desenvolvimento</h2>
+        <p>25 Nov, 2023 – 19:30</p>
+        <button class="btn" onclick="openEvent(3)">Participar</button>
     </div>
 
-  </div>
+    <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" class="event-img">
+        <span class="tag">Gestão</span>
+        <h2>Tech Leadership Summit</h2>
+        <p>02 Dez, 2023 – 09:00</p>
+        <button class="btn" onclick="openEvent(4)">Participar</button>
+    </div>
+
+    <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800" class="event-img">
+        <span class="tag">DevOps</span>
+        <h2>Masterclass CI/CD Moderno</h2>
+        <p>05 Dez, 2023 – 13:00</p>
+        <button class="btn" onclick="openEvent(5)">Participar</button>
+    </div>
+
+    <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1581094651181-35942459ef62?w=800" class="event-img">
+        <span class="tag">Segurança</span>
+        <h2>CyberSecurity Experience</h2>
+        <p>11 Dez, 2023 – 15:00</p>
+        <button class="btn" onclick="openEvent(7)">Participar</button>
+    </div>
+
+    <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800" class="event-img">
+        <span class="tag">Back-end</span>
+        <h2>Node.js Performance Lab</h2>
+        <p>14 Dez, 2023 – 17:00</p>
+        <button class="btn" onclick="openEvent(8)">Participar</button>
+    </div>
+
+    <div class="event-card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" class="event-img">
+        <span class="tag">Cloud</span>
+        <h2>Cloud Architecture Bootcamp</h2>
+        <p>18 Dez, 2023 – 11:00</p>
+        <button class="btn" onclick="openEvent(9)">Participar</button>
+    </div>
+
+</div>
+
+<div id="page1" class="event-page"></div>
+<div id="page2" class="event-page"></div>
+<div id="page3" class="event-page"></div>
+<div id="page4" class="event-page"></div>
+<div id="page5" class="event-page"></div>
+<div id="page6" class="event-page"></div>
+<div id="page7" class="event-page"></div>
+<div id="page8" class="event-page"></div>
+<div id="page9" class="event-page"></div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
